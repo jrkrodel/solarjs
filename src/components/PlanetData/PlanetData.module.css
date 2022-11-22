@@ -1,0 +1,84 @@
+.container {
+  background-color: rgba(17, 17, 17, 0.6);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  min-height: 15rem;
+}
+
+.container .button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: ease all 0.3s;
+}
+
+.container .button:hover {
+  background-color: black;
+  color: white;
+}
+
+.container p {
+  color: white;
+}
+.categoryButton {
+  background-color: rgba(17, 17, 17, 1);
+  padding: 1rem;
+  color: white;
+  width: 35%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgba(17, 17, 17, 0.6);
+}
+
+.lightText {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.info {
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.col h1 {
+  text-transform: capitalize;
+}
+.col p {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.categoryButton:first-of-type {
+  border-top-left-radius: 20px;
+}
+.categoryButton:last-of-type {
+  border-top-right-radius: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "planets": [
+    {
+      "name": "mercury",
+      "mass": 0.33,
+      "diameter": 4879,
+      "density": 5429,
+      "gravity": 3.7,
+      "lengthOfDay": 4222.6,
+      "distanceSun": 57.9,
+      "orbitalPeriod": 88,
+      "orbitalVelocity": 47.4,
+      "meanTemp": 167,
+      "moons": 0,
+      "assetScale": 0.4,
+      "distance": 312487574,
+      "distanceSunMiles": 43000000,
+      "distanceMoonMiles": 56974146
+    },
+    {
+      "name": "venus",
+      "mass": 4.87,
+      "diameter": 12104,
+      "density": 5243,
+      "gravity": 8.9,
+      "lengthOfDay": 2802.0,
+      "distanceSun": 108.2,
+      "orbitalPeriod": 224.7,
+      "orbitalVelocity": 35.0,
+      "meanTemp": 464,
+      "moons": 0,
+      "assetScale": 0.8,
+      "distance": 25724767,
+      "distanceSunMiles": 67000000,
+      "distanceMoonMiles": 25724767
+    },
+    {
+      "name": "earth",
+      "mass": 5.97,
+      "diameter": 12765,
+      "density": 5514,
+      "gravity": 9.8,
+      "lengthOfDay": 24,
+      "distanceSun": 149.6,
+      "orbitalPeriod": 365.2,
+      "orbitalVelocity": 29.8,
+      "meanTemp": 15,
+      "moons": 1,
+      "assetScale": 2,
+      "distance": 48678219,
+      "distanceSunMiles": 93000000,
+      "distanceMoonMiles": 238900
+    },
+    {
+      "name": "mars",
+      "mass": 0.642,
+      "diameter": 6792,
+      "density": 3934,
+      "gravity": 3.7,
+      "lengthOfDay": 24.7,
+      "distanceSun": 228.0,
+      "orbitalPeriod": 687.0,
+      "orbitalVelocity": 24.1,
+      "meanTemp": -65,
+      "moons": [
+        {
+          "name": "Deimos",
+          "link": "https://solarsystem.nasa.gov/moons/mars-moons/deimos/in-depth/"
+        },
+        {
+          "name": "Phobos",
+          "link": "https://solarsystem.nasa.gov/moons/mars-moons/phobos/in-depth/"
+        }
+      ],
+      "assetScale": 0.8,
+      "distance": 48678219,
+      "distanceSunMiles": 142000000,
+      "distanceMoonMiles": 48678219
+    },
+    {
+      "name": "jupiter",
+      "mass": 1898,
+      "diameter": 142984,
+      "density": 1326,
+      "gravity": 23.1,
+      "lengthOfDay": 9.9,
+      "distanceSun": 778.5,
+      "orbitalPeriod": 4331,
+      "orbitalVelocity": 13.1,
+      "meanTemp": -110,
+      "moons": [
+        {
+          "name": "Adrastea",
+          "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/adrastea/in-depth/"
+        }
+      ],
+      "assetScale": 2.5,
+      "distance": 401592178,
+      "distanceSunMiles": 484000000,
+      "distanceMoonMiles": 390674710
+    },
+    {
+      "name": "saturn",
+      "mass": 568,
+      "diameter": 120536,
+      "density": 687,
+      "gravity": 9.0,
+      "lengthOfDay": 10.7,
+      "distanceSun": 1432.0,
+      "orbitalPeriod": 10747,
+      "orbitalVelocity": 9.7,
+      "meanTemp": -140,
+      "moons": 82,
+      "assetScale": 1.3,
+      "distance": 900377530,
+      "distanceSunMiles": 889000000,
+      "distanceMoonMiles": 792248270
+    },
+    {
+      "name": "uranus",
+      "mass": 86.8,
+      "diameter": 51118,
+      "density": 1270,
+      "gravity": 8.7,
+      "lengthOfDay": 17.2,
+      "distanceSun": 2867.0,
+      "orbitalPeriod": 30589,
+      "orbitalVelocity": 6.8,
+      "meanTemp": -195,
+      "moons": 27,
+      "assetScale": 1.1,
+      "distance": 1011297430,
+      "distanceSunMiles": 1790000000,
+      "distanceMoonMiles": 1692662530
+    },
+    {
+      "name": "neptune",
+      "mass": 102,
+      "diameter": 49528,
+      "density": 1638,
+      "gravity": 11.0,
+      "lengthOfDay": 16.1,
+      "distanceSun": 4515.0,
+      "orbitalPeriod": 59800,
+      "orbitalVelocity": 5.4,
+      "meanTemp": -200,
+      "moons": 14,
+      "assetScale": 2,
+      "distanceSunMiles": 2880000000,
+      "distanceMoonMiles": 2703959960
+    }
+  ],
+  "sun": {
+    "name": "The Sun",
+    "mass": 1988500,
+    "diameter": 1392000,
+    "density": 1408,
+    "gravity": 274,
+    "luminosity": 382.8,
+    "energy": 0.1925,
+    "emission": 62.94,
+    "type": "G2 V",
+    "meanTemp": 5600,
+    "assetScale": 3,
+    "distanceMoonMiles": 93000000
+  },
+  "moon": {
+    "name": "The Moon",
+    "mass": 0.073,
+    "diameter": 3475,
+    "density": 3340,
+    "gravity": 1.6,
+    "lengthOfDay": 708.7,
+    "distanceSun": 150,
+    "orbitalPeriod": 27.3,
+    "orbitalVelocity": 1.0,
+    "meanTemp": -20,
+    "moons": 0,
+    "assetScale": 2
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.planet {
+  cursor: pointer;
+}
+
+.animateRight {
+  animation: slideRight 1.5s ease-in-out;
+}
+.animateLeft {
+  animation: slideLeft 1.5s ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    right: 0;
+    opacity: 0%;
+  }
+  70% {
+    right: 36%;
+    opacity: 50%;
+  }
+  100% {
+    right: 35%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 0;
+    opacity: 0%;
+  }
+  70% {
+    left: 36%;
+    opacity: 50%;
+  }
+  100% {
+    left: 35%;
+    opacity: 100%;
+  }
+}

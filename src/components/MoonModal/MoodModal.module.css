@@ -1,0 +1,33 @@
+.moonRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moonBox {
+  width: 200;
+  background-color: "rgba(17, 17, 17);";
+  margin-top: 2;
+  border-radius: 2;
+  padding: 2;
+  margin-left: 10;
+}
+
+.moonLink:hover {
+  background-color: black;
+  color: white;
+}
+
+.moonLink {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: ease all 0.3s;
+}
