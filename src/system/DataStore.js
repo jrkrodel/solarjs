@@ -46,6 +46,8 @@ let DataStore = {
     if (this.active === "planets") {
       this.active = updateActiveCommand.active;
       if (this.active === "sun") {
+        console.log("to sun");
+        console.log(this.assetURL);
         this.distance += this.currentPlanet.distanceSunMiles;
         this.assetURL = `./assets/images/sun.glb`;
       } else if (this.active === "moon") {

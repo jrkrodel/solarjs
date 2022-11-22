@@ -88,8 +88,8 @@ function App() {
           <Distance />
 
           <div className="container">
-            {active === "planets" && (
-              <div className="buttonContainer">
+            <div className="buttonContainer">
+              {active === "planets" && (
                 <FontAwesomeIcon
                   className="icon"
                   onClick={prevPlanet}
@@ -97,12 +97,13 @@ function App() {
                     currentPlanet.name !== "mercury" ? faAngleLeft : faMinus
                   }
                 />
+              )}
 
-                <ModelViewer
-                  animateRight={animateRight}
-                  animateLeft={animateLeft}
-                />
-
+              <ModelViewer
+                animateRight={animateRight}
+                animateLeft={animateLeft}
+              />
+              {active === "planets" && (
                 <FontAwesomeIcon
                   className="icon"
                   onClick={nextPlanet}
@@ -110,10 +111,9 @@ function App() {
                     currentPlanet.name !== "neptune" ? faAngleRight : faMinus
                   }
                 />
-              </div>
-            )}
-            {active === "sun" && <div className="buttonContainer"></div>}
-            {active === "moon" && <div className="buttonContainer"></div>}
+              )}
+            </div>
+
             <PlanetData
               key={currentPlanet.name + DataStore.active}
               active={active}
