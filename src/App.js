@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
   faAngleLeft,
-  faDash,
   faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import {
