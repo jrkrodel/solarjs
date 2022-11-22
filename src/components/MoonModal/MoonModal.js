@@ -1,4 +1,4 @@
-import { Modal, Box, Typography, Slide, Zoom } from "@mui/material";
+import { Modal, Box, Typography, Slide, Zoom, Hidden } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
 import { DataStore } from "../../system/DataStore";
@@ -13,7 +13,8 @@ export default function MoonModal({ open, closeModal }) {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 800,
-    maxHeight: 500,
+    height: 500,
+    overflowY: "scroll",
     bgcolor: "rgba(0, 0, 0);",
     color: "white",
     border: "2px solid rgba(17, 17, 17);",
@@ -67,9 +68,10 @@ export default function MoonModal({ open, closeModal }) {
       <Fade in={open}>
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
+            Total{" "}
             {DataStore.currentPlanet.name.charAt(0).toUpperCase() +
               DataStore.currentPlanet.name.slice(1)}{" "}
-            Moons
+            Moons - {DataStore.currentPlanet.moons.length}
           </Typography>
           <div className={styles.moonRow}>{moonsButtons}</div>
         </Box>

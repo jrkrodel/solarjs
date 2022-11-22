@@ -1,12 +1,8 @@
 .container {
   height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 13%;
-  width: 30%;
   cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .planet {

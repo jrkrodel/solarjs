@@ -5,7 +5,12 @@ import ModelViewer from "./components/Planet/PlanetViewer";
 import MoonModal from "./components/MoonModal/MoonModal";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleRight,
+  faAngleLeft,
+  faDash,
+  faMinus,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   DataStore,
   QueryCommand,
@@ -79,39 +84,45 @@ function App() {
   if (data) {
     return (
       <div className="app">
-        <Distance />
-        <ModelViewer animateRight={animateRight} animateLeft={animateLeft} />
-        <div className="container">
-          {active === "planets" && (
-            <div className="buttonContainer">
-              {currentPlanet.name !== "mercury" ? (
+        <div className={"appContainer"}>
+          <Distance />
+
+          <div className="container">
+            {active === "planets" && (
+              <div className="buttonContainer">
                 <FontAwesomeIcon
                   className="icon"
                   onClick={prevPlanet}
-                  icon={faAngleLeft}
+                  icon={
+                    currentPlanet.name !== "mercury" ? faAngleLeft : faMinus
+                  }
                 />
-              ) : (
-                <div></div>
-              )}
-              {currentPlanet.name !== "neptune" && (
+
+                <ModelViewer
+                  animateRight={animateRight}
+                  animateLeft={animateLeft}
+                />
+
                 <FontAwesomeIcon
                   className="icon"
                   onClick={nextPlanet}
-                  icon={faAngleRight}
+                  icon={
+                    currentPlanet.name !== "neptune" ? faAngleRight : faMinus
+                  }
                 />
-              )}
-            </div>
-          )}
-          {active === "sun" && <div className="buttonContainer"></div>}
-          {active === "moon" && <div className="buttonContainer"></div>}
-          <PlanetData
-            key={currentPlanet.name + DataStore.active}
-            active={active}
-            changeActive={changeActive}
-            openModal={handleOpen}
-          />
+              </div>
+            )}
+            {active === "sun" && <div className="buttonContainer"></div>}
+            {active === "moon" && <div className="buttonContainer"></div>}
+            <PlanetData
+              key={currentPlanet.name + DataStore.active}
+              active={active}
+              changeActive={changeActive}
+              openModal={handleOpen}
+            />
+          </div>
+          <MoonModal open={open} closeModal={handleClose} />
         </div>
-        <MoonModal open={open} closeModal={handleClose} />
       </div>
     );
   }
