@@ -3,6 +3,7 @@
   cursor: pointer;
   width: 50%;
   margin: 0 auto;
+  position: relative;
 }
 
 .planet {
@@ -18,30 +19,30 @@
 
 @keyframes slideRight {
   0% {
-    right: 0;
+    right: -26%;
     opacity: 0%;
   }
   70% {
-    right: 36%;
+    right: 2%;
     opacity: 50%;
   }
   100% {
-    right: 35%;
+    right: 0%;
     opacity: 100%;
   }
 }
 
 @keyframes slideLeft {
   0% {
-    left: 0;
+    left: -26%;
     opacity: 0%;
   }
   70% {
-    left: 36%;
+    left: 2%;
     opacity: 50%;
   }
   100% {
-    left: 35%;
+    left: 0%;
     opacity: 100%;
   }
 }
