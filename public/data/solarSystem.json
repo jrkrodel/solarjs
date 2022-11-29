@@ -37,7 +37,7 @@
     {
       "name": "earth",
       "mass": 5.97,
-      "diameter": 12765,
+      "diameter": 12756,
       "density": 5514,
       "gravity": 9.8,
       "lengthOfDay": 24,
@@ -108,7 +108,7 @@
         {
           "name": "Aoede",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/aoede/in-depth/"
-        },  
+        },
         {
           "name": "Arche",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/arche/in-depth/"
@@ -116,119 +116,119 @@
         {
           "name": "Autonoe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/autonoe/in-depth/"
-        },  
+        },
         {
           "name": "Callirrhoe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/callirrhoe/in-depth/"
-        },  
+        },
         {
           "name": "Callisto",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/callisto/overview/"
-        },  
+        },
         {
           "name": "Carme",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/carme/in-depth/"
-        },  
+        },
         {
           "name": "Carpo",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/carpo/in-depth/"
-        },  
+        },
         {
           "name": "Chaldene",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/chaldene/in-depth/"
-        },  
+        },
         {
           "name": "Cyllene",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/cyllene/in-depth/"
-        },  
+        },
         {
           "name": "Dia",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/dia/in-depth/"
-        },  
+        },
         {
           "name": "Eirene",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j5/in-depth/"
-        },  
+        },
         {
           "name": "Elara",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/elara/in-depth/"
-        },  
+        },
         {
           "name": "Erinome",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/erinome/in-depth/"
-        },  
+        },
         {
           "name": "Ersa",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2018-j1/in-depth/"
-        },  
+        },
         {
           "name": "Euanthe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/euanthe/in-depth/"
-        },  
+        },
         {
           "name": "Eukelade",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/eukelade/in-depth/"
-        },  
+        },
         {
           "name": "Eupheme",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j3/in-depth/"
-        },  
+        },
         {
           "name": "Euporie",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/euporie/in-depth/"
-        },  
+        },
         {
           "name": "Europa",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/europa/overview/"
-        },  
+        },
         {
           "name": "Eurydome",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/eurydome/in-depth/"
-        },  
+        },
         {
           "name": "Ganymede",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/ganymede/overview/"
-        },  
+        },
         {
           "name": "Harpalyke",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/harpalyke/in-depth/"
-        },  
+        },
         {
           "name": "Hegemone",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/hegemone/in-depth/"
-        },  
+        },
         {
           "name": "Helike",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/helike/in-depth/"
-        },  
+        },
         {
           "name": "Hermippe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/hermippe/in-depth/"
-        },  
+        },
         {
           "name": "Herse",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/herse/in-depth/"
-        },  
+        },
         {
           "name": "Himalia",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/himalia/in-depth/"
-        },  
+        },
         {
           "name": "Io",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/io/overview/"
-        },  
+        },
         {
           "name": "Iocaste",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/iocaste/in-depth/"
-        },  
+        },
         {
           "name": "Isonoe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/isonoe/in-depth/"
-        },  
+        },
         {
           "name": "Jupiter LII | S/2010 J2",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/jupiter-lii/in-depth/"
-        },  
+        },
         {
           "name": "Jupiter LI | S/2010 J1",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/jupiter-li/in-depth/"
@@ -236,75 +236,75 @@
         {
           "name": "Kale",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/kale/in-depth/"
-        }, 
+        },
         {
           "name": "Kallichore",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/kallichore/in-depth/"
-        },  
+        },
         {
           "name": "Kalyke",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/kalyke/in-depth/"
-        },  
+        },
         {
           "name": "Kore",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/kore/in-depth/"
-        },  
+        },
         {
           "name": "Leda",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/leda/in-depth/"
-        },  
+        },
         {
           "name": "Lysithea",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/lysithea/in-depth/"
-        },  
+        },
         {
           "name": "Megaclite",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/megaclite/in-depth/"
-        },  
+        },
         {
           "name": "Metis",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/metis/in-depth/"
-        },  
+        },
         {
           "name": "Mneme",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/mneme/in-depth/"
-        },  
+        },
         {
           "name": "Orthosie",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/orthosie/in-depth/"
-        },  
+        },
         {
           "name": "Pandia",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2017-j4/in-depth/"
-        },  
+        },
         {
           "name": "Pasiphae",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/pasiphae/in-depth/"
-        },  
+        },
         {
           "name": "Pasithee",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/pasithee/in-depth/"
-        },  
+        },
         {
           "name": "Philophrosyne",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j15/in-depth/"
-        },  
+        },
         {
           "name": "Praxidike",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/praxidike/in-depth/"
-        },  
+        },
         {
           "name": "S/2003 J10",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j10/in-depth/"
-        },  
+        },
         {
           "name": "S/2003 J12",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j12/in-depth/"
-        },  
+        },
         {
           "name": "S/2003 J16",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j16/in-depth/"
-        },  
+        },
         {
           "name": "S/2003 J18",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2003-j18/in-depth/"
@@ -380,31 +380,31 @@
         {
           "name": "Sinope",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/sinope/in-depth/"
-        },  
+        },
         {
           "name": "Sponde",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/sponde/in-depth/"
-        },  
+        },
         {
           "name": "Taygete",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/taygete/in-depth/"
-        },  
+        },
         {
           "name": "Thebe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/thebe/in-depth/"
-        },  
+        },
         {
           "name": "Thelxinoe",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/thelxinoe/in-depth/"
-        },  
+        },
         {
           "name": "Themisto",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/themisto/in-depth/"
-        },  
+        },
         {
           "name": "Thyone",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/thyone/in-depth/"
-        },  
+        },
         {
           "name": "Valetudo",
           "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/s-2016-j2-valetudo/in-depth/"
@@ -426,7 +426,7 @@
       "orbitalPeriod": 10747,
       "orbitalVelocity": 9.7,
       "meanTemp": -140,
-      "moons": [ 
+      "moons": [
         {
           "name": "Aegaeon",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/aegaeon/in-depth/"
@@ -615,14 +615,14 @@
           "name": "Polydeuces",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/polydeuces/in-depth/"
         },
-          {
+        {
           "name": "Prometheus",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/prometheus/in-depth/"
         },
-          {
+        {
           "name": "Rhea",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/rhea/in-depth/"
-        },  
+        },
         {
           "name": "S/2004 S12",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/s-2004-s12/in-depth/"
@@ -759,8 +759,8 @@
           "name": "Ymir",
           "link": "https://solarsystem.nasa.gov/moons/saturn-moons/ymir/in-depth/"
         }
-    ],
-      
+      ],
+
       "assetScale": 1.3,
       "distance": 900377530,
       "distanceSunMiles": 889000000,
@@ -977,7 +977,7 @@
     "emission": 62.94,
     "type": "G2 V",
     "meanTemp": 5600,
-    "assetScale": 3,
+    "assetScale": 1.165,
     "distanceMoonMiles": 93000000
   },
   "moon": {

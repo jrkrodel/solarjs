@@ -1,4 +1,4 @@
-import { Modal, Box, Typography, Slide, Zoom, Hidden } from "@mui/material";
+import { Modal, Box, Typography } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
 import { DataStore } from "../../system/DataStore";
@@ -7,6 +7,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function MoonModal({ open, closeModal }) {
+  //Set the styles for the modal box
   const style = {
     position: "absolute",
     top: "50%",
@@ -23,6 +24,7 @@ export default function MoonModal({ open, closeModal }) {
     p: 4,
   };
 
+  //Set the style for the nested component inside the moon modal box
   const nested_style = {
     width: 200,
     bgcolor: "rgba(17, 17, 17);",
@@ -37,11 +39,16 @@ export default function MoonModal({ open, closeModal }) {
     flexDirection: "column",
   };
 
+  //Set moonsData to the currents planets set of moons
   const moonsData = DataStore.currentPlanet.moons;
+
+  //declare moonsButton
   let moonsButtons;
 
+  //If moons data length is greater than 0, meaning we have some moons, we create a button for each moon
   if (moonsData.length > 0) {
     moonsButtons = moonsData.map((moon, ind) => {
+      //Map through each moon and create a Box with that moons information
       return (
         <Box key={ind} sx={nested_style}>
           <h3>{moon.name}</h3>
@@ -53,6 +60,7 @@ export default function MoonModal({ open, closeModal }) {
     });
   }
 
+  //Render a Modal that displays all the moonsButtons inside
   return (
     <Modal
       aria-labelledby="transition-modal-title"
