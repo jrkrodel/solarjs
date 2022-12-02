@@ -73,6 +73,7 @@ export default function MoonModal({ open, closeModal }) {
         timeout: 500,
       }}
     >
+      {/* Fade creates fade in animation for nested elements */}
       <Fade in={open}>
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -81,6 +82,7 @@ export default function MoonModal({ open, closeModal }) {
               DataStore.currentPlanet.name.slice(1)}{" "}
             Moons - {DataStore.currentPlanet.moons.length}
           </Typography>
+          {/* List of all moon buttons */}
           <div className={styles.moonRow}>{moonsButtons}</div>
         </Box>
       </Fade>

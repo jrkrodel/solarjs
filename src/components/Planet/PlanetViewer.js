@@ -5,7 +5,9 @@ import styles from "./Planet.module.css";
 import { DataStore } from "../../system/DataStore";
 import Planet from "./Planet";
 
-const ModelViewer = ({ position = [0, 0, 0], animateLeft, url, scale }) => {
+const PlanetViewer = ({ position = [0, 0, 0], animateLeft, url, scale }) => {
+  //If no url from props passed down, the app is running and not an the main menu
+  //So we displayed the planet with the needed animations
   if (url === null) {
     return (
       //Set the key to the currently set a assetURL, so whenever we update that this gets rerendered
@@ -27,6 +29,7 @@ const ModelViewer = ({ position = [0, 0, 0], animateLeft, url, scale }) => {
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <pointLight position={[-10, -10, -10]} />
           <Suspense fallback={null}>
+            {/* Render planet with no preset url or scale */}
             <Planet position={position} url={null} scale={null} />
             <OrbitControls enableZoom={false} />
           </Suspense>
@@ -39,6 +42,8 @@ const ModelViewer = ({ position = [0, 0, 0], animateLeft, url, scale }) => {
         <spotLight position={[10, 10, 10]} />
         <pointLight position={[-10, -10, -10]} />
         <Suspense fallback={null}>
+          {/* Render planet passing down set url and scale values */}
+          {/* Note: no controls for row of planets on main menu */}
           <Planet
             position={[0, 0, 0]}
             rotate={[10, 10, 10]}
@@ -51,4 +56,4 @@ const ModelViewer = ({ position = [0, 0, 0], animateLeft, url, scale }) => {
   }
 };
 
-export default ModelViewer;
+export default PlanetViewer;

@@ -4,12 +4,11 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function PlanetData({ changeActive, openModal }) {
-  console.log(DataStore.currentPlanet);
   return (
     <div className={styles.container}>
       <div className={styles.row}>
         <div
-          //use the function we to change the active subset of data to planets
+          //use the function we passed down to change the active subset of data to planets
           onClick={() => changeActive("planets")}
           className={
             DataStore.active === "planets"
@@ -20,7 +19,7 @@ export default function PlanetData({ changeActive, openModal }) {
           Planets
         </div>
         <div
-          //use the function we to change the active subset of data to the sun
+          //use the function we passed down to change the active subset of data to the sun
           onClick={() => changeActive("sun")}
           className={
             DataStore.active === "sun"
@@ -31,7 +30,7 @@ export default function PlanetData({ changeActive, openModal }) {
           The Sun
         </div>
         <div
-          //use the function we to change the active subset of data to the moon
+          //use the function we passed down to change the active subset of data to the moon
           onClick={() => changeActive("moon")}
           className={
             DataStore.active === "moon"
@@ -101,6 +100,8 @@ export default function PlanetData({ changeActive, openModal }) {
                 Mean Tempature <span className={styles.lightText}>(C)</span>:{" "}
                 {DataStore.currentPlanet.meanTemp.toLocaleString()}
               </p>
+              {/* If the current planet is the moon, we render a button that links
+              to "The Moon", rather than opening up a modal of a list of moons */}
               {DataStore.currentPlanet.name === "earth" ? (
                 <p
                   onClick={() => changeActive("moon")}
@@ -110,6 +111,7 @@ export default function PlanetData({ changeActive, openModal }) {
                   <FontAwesomeIcon icon={faAngleRight} />
                 </p>
               ) : (
+                //If current planet is not earth there moons for a current planet, we display a button that opens up the moon model
                 DataStore.currentPlanet.moons.length > 0 && (
                   <p onClick={openModal} className={styles.button}>
                     Moons: {DataStore.currentPlanet.moons.length}{" "}

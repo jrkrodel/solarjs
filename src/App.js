@@ -1,7 +1,7 @@
 import "./App.css";
 import PlanetData from "./components/PlanetData/PlanetData";
 import Distance from "./components/Distance/Distance";
-import ModelViewer from "./components/Planet/PlanetViewer";
+import PlanetViewer from "./components/Planet/PlanetViewer";
 import MoonModal from "./components/MoonModal/MoonModal";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -107,11 +107,13 @@ function App() {
   };
   const handleClose = () => setOpen(false);
 
-  //If data has been retrieved and exists, we return the following JS
+  //If data has been retrieved and exists, and we check if the app is currently running
+  //meaning we are not on the home page/main menu, we return the following JS
   if (data && isRunning === true) {
     return (
       <div className="app">
         <div className={"appContainer"}>
+          {/* Distance component */}
           <Distance />
           <div className="container">
             <div className="buttonContainer">
@@ -127,7 +129,8 @@ function App() {
                 />
               )}
 
-              <ModelViewer animateLeft={animateLeft} url={null} scale={null} />
+              {/* Create planet, set uneeded props to null to render correctly */}
+              <PlanetViewer animateLeft={animateLeft} url={null} scale={null} />
               {active === "planets" && (
                 //If active is equal to planets we display arrows to load different planets
                 <FontAwesomeIcon
@@ -140,7 +143,7 @@ function App() {
                 />
               )}
             </div>
-
+            {/* PlanetData component */}
             <PlanetData
               key={currentPlanet.name + DataStore.active}
               active={active}
@@ -148,26 +151,28 @@ function App() {
               openModal={handleOpen}
             />
           </div>
+          {/* Moon Modal Component */}
           <MoonModal open={open} closeModal={handleClose} />
         </div>
       </div>
     );
   } else {
-    console.log(DataStore.data);
+    //If we are displaying the main menu and the app is not running
     return (
       <div className="app">
         <div className="mainMenu">
           <h1>SolarJS</h1>
           <h3>Explore our solar system, one click at a time</h3>
           <div className="planetRow">
-            <ModelViewer url="./assets/images/mercury.glb" scale={0.5} />
-            <ModelViewer url="./assets/images/venus.glb" scale={0.8} />
-            <ModelViewer url="./assets/images/earth.glb" scale={2} />
-            <ModelViewer url="./assets/images/mars.glb" scale={0.7} />
-            <ModelViewer url="./assets/images/jupiter.glb" scale={2.5} />
-            <ModelViewer url="./assets/images/saturn.glb" scale={2.3} />
-            <ModelViewer url="./assets/images/uranus.glb" scale={1} />
-            <ModelViewer url="./assets/images/neptune.glb" scale={1.5} />
+            {/* Render a row of planets, pass through a set scale for the 3D objects */}
+            <PlanetViewer url="./assets/images/mercury.glb" scale={0.5} />
+            <PlanetViewer url="./assets/images/venus.glb" scale={0.8} />
+            <PlanetViewer url="./assets/images/earth.glb" scale={2} />
+            <PlanetViewer url="./assets/images/mars.glb" scale={0.7} />
+            <PlanetViewer url="./assets/images/jupiter.glb" scale={2.5} />
+            <PlanetViewer url="./assets/images/saturn.glb" scale={2.3} />
+            <PlanetViewer url="./assets/images/uranus.glb" scale={1} />
+            <PlanetViewer url="./assets/images/neptune.glb" scale={1.5} />
           </div>
           <button className="mainMenuButton" onClick={() => setIsRunning(true)}>
             Start Exploring!
