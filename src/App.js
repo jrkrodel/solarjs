@@ -18,6 +18,11 @@ import {
 } from "./system/DataStore";
 
 function App() {
+  //State to check if the application is running
+  //When it is false, we show the home page,
+  //Otherwise we show the main menu/intro screen
+  const [isRunning, setIsRunning] = useState(false);
+
   //State for storing current data
   const [data, setData] = useState(null);
 
@@ -103,7 +108,7 @@ function App() {
   const handleClose = () => setOpen(false);
 
   //If data has been retrieved and exists, we return the following JS
-  if (data) {
+  if (data && isRunning === true) {
     return (
       <div className="app">
         <div className={"appContainer"}>
@@ -122,7 +127,7 @@ function App() {
                 />
               )}
 
-              <ModelViewer animateLeft={animateLeft} />
+              <ModelViewer animateLeft={animateLeft} url={null} scale={null} />
               {active === "planets" && (
                 //If active is equal to planets we display arrows to load different planets
                 <FontAwesomeIcon
@@ -144,6 +149,29 @@ function App() {
             />
           </div>
           <MoonModal open={open} closeModal={handleClose} />
+        </div>
+      </div>
+    );
+  } else {
+    console.log(DataStore.data);
+    return (
+      <div className="app">
+        <div className="mainMenu">
+          <h1>SolarJS</h1>
+          <h3>Explore our solar system, one click at a time</h3>
+          <div className="planetRow">
+            <ModelViewer url="./assets/images/mercury.glb" scale={0.5} />
+            <ModelViewer url="./assets/images/venus.glb" scale={0.8} />
+            <ModelViewer url="./assets/images/earth.glb" scale={2} />
+            <ModelViewer url="./assets/images/mars.glb" scale={0.7} />
+            <ModelViewer url="./assets/images/jupiter.glb" scale={2.5} />
+            <ModelViewer url="./assets/images/saturn.glb" scale={2.3} />
+            <ModelViewer url="./assets/images/uranus.glb" scale={1} />
+            <ModelViewer url="./assets/images/neptune.glb" scale={1.5} />
+          </div>
+          <button className="mainMenuButton" onClick={() => setIsRunning(true)}>
+            Start Exploring!
+          </button>
         </div>
       </div>
     );
