@@ -43,8 +43,6 @@ const Planet = ({ position = [0, 0, 0], url, scale }) => {
         scale={scale}
         object={gltf.scene}
         position={position}
-        // rotation-x={Math.PI * 0.1}
-        // rotation-y={Math.PI * 0}
       />
     </>
   );
