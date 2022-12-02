@@ -33,6 +33,11 @@
   width: 35%;
   text-align: center;
   cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.categoryButton:hover {
+  background-color: rgba(50, 50, 50, 1);
 }
 
 .active {
