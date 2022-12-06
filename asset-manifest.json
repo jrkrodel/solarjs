@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/solarjs/static/css/main.2770c085.css",
+    "main.js": "/solarjs/static/js/main.a3e4e421.js",
+    "static/media/space.jpg": "/solarjs/static/media/space.c44ed04c57064dd1b4d5.jpg",
+    "index.html": "/solarjs/index.html",
+    "main.2770c085.css.map": "/solarjs/static/css/main.2770c085.css.map",
+    "main.a3e4e421.js.map": "/solarjs/static/js/main.a3e4e421.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2770c085.css",
+    "static/js/main.a3e4e421.js"
+  ]
+}
